@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+<style media="screen">
+  body{
+    background: rgba(43, 125, 78, 0.95);
+    }
+    section{
+      max-width: 600px;
+      padding: 1rem;
+      margin: 0 auto;
+      border: 1px solid red;
+      border-radius: 5px;
+      background: rgb(82, 161, 179);
+      display: flex;
+      align-items: center;
+      }
+      img{
+        margin-right: 1rem;
+      }
+      p{
+        margin: 0;
+      }
+      @media (max-width: 672px){
+        section{
+          flex-direction: row-reverse;
+        }
+        p{
+          margin-right: 1rem;
+        }
+        img{
+          margin-right: 0;
+        }
+      }
+      @media (max-width: 400px) {
+        section{
+          flex-direction: column;
+        }
+        img{
+          margin-right: 0;
+          flex: 0 1 200px;
+          margin-bottom: 1rem;
+        }
+        p{
+          text-align: center;
+        }
+      }
+
+
+</style>
+
+</head>
+<body>
+  <section>
+    <img src="isologo.png" alt="">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </section>
+</body>
+</html>

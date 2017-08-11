@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+<style media="screen">
+  body{
+    background: rgba(43, 125, 78, 0.95);
+    height: 1000px;
+  }
+  nav{
+    background: white;
+    max-width: 800px;
+    margin: 0 auto;
+    }
+  nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    }
+  nav ul a{
+    background: red;
+    display: block;
+    color: black;
+    padding: 1rem;
+    text-decoration: none;
+    }
+  nav ul a:hover{
+    background: rgb(153, 153, 153);
+    }
+
+  @media (max-width:550px) {
+    nav ul{
+      flex-direction: column;
+      }
+    nav ul a{
+      text-align: center;
+    }
+  }
+
+</style>
+
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="">Enlance 1</a></li>
+      <li><a href="">Enlance 2</a></li>
+      <li><a href="">Enlance 3</a></li>
+      <li><a href="">Enlance 4</a></li>
+      <li><a href="">Enlance 5</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

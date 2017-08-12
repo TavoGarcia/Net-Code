@@ -1,0 +1,136 @@
+//----------------------
+/*PATRON DE COLORES*/
+//----------------------
+$texto: #363636;
+$principal: #1e88e5;
+$secundario: #bb3a3a;
+$menu: #000;
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: $texto;
+}
+
+.bienvenidos {
+  background: url("../images/fondo-encabezado.jpg") no-repeat center top;
+  color: #fff;
+  background-size: cover; //hace que el fondo se vea mejor
+  height: 100vh; //indica que el 100% de la altura de la pantalla
+  display: flex;
+  flex-direction: column;
+}
+
+.encabezado {
+  background: $menu;
+  color: #fff;
+  padding: 0.5rem 0;
+}
+
+.encabezado .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.encabezado .logo img {
+  width: 150px;
+  height: auto;
+}
+/*ESTILOS PARA EL BOTON MENÚ*/
+
+.btn-menu {
+  border: 0;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0 0.5rem;
+  background: transparent;
+  color: #fff;
+  margin-left: auto;
+}
+/*Evita que el foco del navegador se muestre es un margen al rededor del elemento*/
+
+.btn-menu:focus {
+  outline: 0;
+}
+
+#menu-principal {
+  flex: 1 1 100%;
+}
+
+#menu-principal ul {
+  padding: 0;
+  list-style: none;
+  margin: 1rem 0 0;
+}
+
+#menu-principal ul a {
+  display: block;
+  padding: 0.8rem 0;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  border-top: 1px solid #fff;
+  text-decoration: none;
+}
+
+#menu-principal ul a:hover,
+#menu-principal ul li.active a {
+  color: $principal;
+}
+.texto-encabezado{
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+}
+.texto-encabezado .margen{
+  margin-top: 4rem;
+}
+.ita {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 600;
+}
+.texto-encabezado .container p{
+  margin-top: 1.5rem;
+}
+.btn-primary {
+  color: #fff;
+  background-color: $secundario;
+  border-color: transparent;
+  margin-top: 1rem;
+  transition: all 0.5s ease;
+}
+
+.btn-primary:active:hover,
+.btn-primary:focus,
+.btn-primary:hover {
+  color: #fff;
+  background-color: $principal;
+  border-color: transparent;
+}
+
+.flecha-scroll a{
+  display: inline-block;
+  color: #fff;
+  font-size: 4rem;
+  animation: flecha-scroll 2s ease-in-out infinite;
+}
+
+@keyframes flecha-scroll {
+  from{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(6px);
+  }
+  to{
+    transform: translateY(0);
+  }
+}

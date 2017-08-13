@@ -137,3 +137,77 @@ body {
     transform: translateY(0);
   }
 }
+/*SECCIÓN CONÓCENOS*/
+.valores .col-xs-6 ul {
+  padding: 0;
+  list-style: none;
+  margin: 1rem 0 0;
+}
+
+.valores h4 {
+  color: #363636;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 0.8rem;
+}
+
+.valores ul,
+.valores ul li {
+  list-style: none;
+}
+
+.valores ul li {
+  min-height: 9rem;
+}
+
+.valores ul li .fa,
+.conocenos .container .fa {
+  list-style: none;
+  font-size: 2.3rem;
+  //background: $principal;
+  border-radius: 50%;
+  border: solid 3px $principal;
+  overflow: hidden;
+  width: 4.7rem;
+  height: 4.7rem;
+  line-height: 4.7rem;
+  color: $principal;
+}
+
+.conocenos .container div{
+  margin: 1rem 0;
+}
+
+/*SECCIÓN TU MEJOR ELECCIÓN*/
+.tu-mejor-eleccion h2 span {
+  color: $secundario;
+}
+
+.tu-mejor-eleccion ul,
+.tu-mejor-eleccion ul li {
+  list-style: none;
+}
+
+.tu-mejor-eleccion ul li {
+  min-height: 9rem;
+}
+
+.tu-mejor-eleccion ul li .fa {
+  list-style: none;
+  font-size: 2.3rem;
+  background: $principal;
+  border-radius: 50%;
+  //border: solid 3px $principal;
+  overflow: hidden;
+  width: 4.7rem;
+  height: 4.7rem;
+  line-height: 4.7rem;
+  color: #fff;
+}
+
+.contenedor-eleccion h4 {
+  color: #363636;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 0.8rem;
+}

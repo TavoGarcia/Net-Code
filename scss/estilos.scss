@@ -41,6 +41,7 @@ body {
   height: auto;
 }
 /*ESTILOS PARA EL BOTON MENÚ*/
+
 .btn-menu {
   border: 0;
   font-size: 2rem;
@@ -51,6 +52,7 @@ body {
   margin-left: auto;
 }
 /*Evita que el foco del navegador se muestre es un margen al rededor del elemento*/
+
 .btn-menu:focus {
   outline: 0;
 }
@@ -87,7 +89,7 @@ body {
 }
 
 .texto-encabezado .margen {
-  margin-top: 4rem;
+  //margin-top: 4rem;
 }
 
 .ita {
@@ -138,6 +140,7 @@ body {
   }
 }
 /*SECCIÓN CONÓCENOS*/
+
 .valores .col-xs-6 ul {
   padding: 0;
   list-style: none;
@@ -160,8 +163,8 @@ body {
   min-height: 9rem;
 }
 
-.valores ul li .fa,
-.conocenos .container .fa {
+.conocenos .container .fa,
+.valores ul li .fa {
   list-style: none;
   font-size: 2.3rem;
   //background: $principal;
@@ -174,11 +177,11 @@ body {
   color: $principal;
 }
 
-.conocenos .container div{
+.conocenos .container div {
   margin: 1rem 0;
 }
-
 /*SECCIÓN TU MEJOR ELECCIÓN*/
+
 .tu-mejor-eleccion h2 span {
   color: $secundario;
 }
@@ -210,4 +213,55 @@ body {
   font-size: 1.2rem;
   font-weight: bold;
   margin-top: 0.8rem;
+}
+/*SECCIÓN FOOTER*/
+
+.pie-pag {
+  background: #212121;
+  color: #fff;
+  text-align: center;
+}
+
+.pie-pag .redes-sociales {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pie-pag .redes-sociales a {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 0.8rem;
+}
+
+.pie-pag .redes-sociales .fa-twitter:hover {
+  color: #1dcaff;
+}
+
+.pie-pag .redes-sociales .fa-facebook:hover {
+  color: #3b5998;
+}
+
+.pie-pag .redes-sociales .fa-youtube:hover {
+  color: #c4302b;
+}
+
+.ir-arriba{
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  color: $secundario;
+  text-decoration: none;;
+  z-index: 99999;
+  line-height: 0;
+  transition: all .5s ease;
+}
+.ir-arriba:hover,
+.ir-arriba:focus{
+  outline: 0;
+  text-decoration: none;
+  color: $principal;
 }

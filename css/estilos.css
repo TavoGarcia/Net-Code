@@ -12,15 +12,8 @@ body {
   color: #fff;
   background-size: cover;
   height: 100vh;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  flex-direction: column; }
 
 .encabezado {
   background: #000;
@@ -28,17 +21,9 @@ body {
   padding: 0.5rem 0; }
 
 .encabezado .container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+  align-items: center;
+  flex-wrap: wrap; }
 
 .encabezado .logo img {
   width: 150px;
@@ -59,10 +44,7 @@ body {
   outline: 0; }
 
 #menu-principal {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 100%;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%; }
+  flex: 1 1 100%; }
 
 #menu-principal ul {
   padding: 0;
@@ -83,18 +65,9 @@ body {
   color: #1e88e5; }
 
 .texto-encabezado {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  flex: 1 1 auto;
+  align-items: center; }
 
 .texto-encabezado .margen {
   margin-top: 4rem; }
@@ -113,8 +86,7 @@ body {
   background-color: #bb3a3a;
   border-color: transparent;
   margin-top: 1rem;
-  -webkit-transition: all 0.5s ease;
-          transition: all 0.5s ease; }
+  transition: all 0.5s ease; }
 
 .btn-primary:active:hover,
 .btn-primary:focus,
@@ -127,29 +99,14 @@ body {
   display: inline-block;
   color: #fff;
   font-size: 4rem;
-  -webkit-animation: flecha-scroll 2s ease-in-out infinite;
-          animation: flecha-scroll 2s ease-in-out infinite; }
-
-@-webkit-keyframes flecha-scroll {
-  from {
-    -webkit-transform: translateY(0);
-            transform: translateY(0); }
-  50% {
-    -webkit-transform: translateY(6px);
-            transform: translateY(6px); }
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0); } }
+  animation: flecha-scroll 2s ease-in-out infinite; }
 
 @keyframes flecha-scroll {
   from {
-    -webkit-transform: translateY(0);
-            transform: translateY(0); }
+    transform: translateY(0); }
   50% {
-    -webkit-transform: translateY(6px);
-            transform: translateY(6px); }
+    transform: translateY(6px); }
   to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0); } }
+    transform: translateY(0); } }
 
 /*# sourceMappingURL=estilos.css.map */

@@ -34,7 +34,6 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-
 }
 
 .encabezado .logo img {
@@ -42,7 +41,6 @@ body {
   height: auto;
 }
 /*ESTILOS PARA EL BOTON MENÚ*/
-
 .btn-menu {
   border: 0;
   font-size: 2rem;
@@ -53,7 +51,6 @@ body {
   margin-left: auto;
 }
 /*Evita que el foco del navegador se muestre es un margen al rededor del elemento*/
-
 .btn-menu:focus {
   outline: 0;
 }
@@ -82,14 +79,17 @@ body {
 #menu-principal ul li.active a {
   color: $principal;
 }
-.texto-encabezado{
+
+.texto-encabezado {
   display: flex;
   flex: 1 1 auto;
   align-items: center;
 }
-.texto-encabezado .margen{
+
+.texto-encabezado .margen {
   margin-top: 4rem;
 }
+
 .ita {
   font-style: italic;
 }
@@ -97,9 +97,11 @@ body {
 .bold {
   font-weight: 600;
 }
-.texto-encabezado .container p{
+
+.texto-encabezado .container p {
   margin-top: 1.5rem;
 }
+
 .btn-primary {
   color: #fff;
   background-color: $secundario;
@@ -116,21 +118,22 @@ body {
   border-color: transparent;
 }
 
-.flecha-scroll a{
+.flecha-scroll a {
   display: inline-block;
   color: #fff;
   font-size: 4rem;
   animation: flecha-scroll 2s ease-in-out infinite;
 }
-
 @keyframes flecha-scroll {
-  from{
+  from {
     transform: translateY(0);
   }
-  50%{
+
+  50% {
     transform: translateY(6px);
   }
-  to{
+
+  to {
     transform: translateY(0);
   }
 }

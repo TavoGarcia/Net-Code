@@ -13,6 +13,7 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
 
     <!--Carga de archivos CSS-->
+    <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/estilos.css">
 
@@ -24,7 +25,7 @@
           <a href="index.html" class="logo">
             <img src="images/Net-Code-blanco.svg" alt="Isologo">
           </a>
-          <button type="button" class="btn-menu" data-toggle="collapse"
+          <button type="button" class="btn-menu hidden-md-up" data-toggle="collapse"
           data-target="#menu-principal" aria-expanded="false"
           aria-controls="collapseExample">
             <i class="fa fa-bars" aria-hidden="true"></i>
@@ -62,8 +63,8 @@
 
     <section class="conocenos py-1" id="conocenos">
       <div class="container">
-        <h2 class="h3 text-xs-center font-weight-bold">Conócenos</h2>
-        <div class="text-xs-center">
+        <h2 class="text-xs-center font-weight-bold">Conócenos</h2>
+        <div class="text-xs-center py-1">
           <i class="fa fa-users" aria-hidden="true"></i>
         </div>
 
@@ -75,7 +76,7 @@
             con el propósito de brindar servicios de calidad a nuestros clientes.</p>
           </div>
         </div>
-        <h2 class="h4 text-xs-center font-weight-bold">Nuestros valores nos definen</h2>
+        <h2 class="h4 text-xs-center font-weight-bold py-1">Nuestros valores nos definen</h2>
         <div class="row valores">
           <div class="col-xs-6 col-md-3 text-xs-center">
               <ul>
@@ -114,24 +115,35 @@
     </section>
 
     <main class="servicios py-1">
-      <h2>Nuestros Servicios</h2>
-      <article class="">
-        <img src="images/servicio1.svg" alt="">
-        <h3>Diseño y Desarrollo de software a medida</h3>
-      </article>
-      <article class="">
-        <img src="images/servicio2.svg" alt="">
-        <h3>Redes de Computadoras</h3>
-      </article>
-      <article class="">
-        <img src="images/servicio3.svg" alt="">
-        <h3>Instalación de Sistemas de Video Vigilancia</h3>
-      </article>
+      <div class="container">
+        <h2 class="text-xs-center font-weight-bold">Nuestros Servicios</h2>
+
+        <div class="row">
+          <article class="col-md-4">
+            <img src="images/Servicio 1.svg" alt="">
+            <h3>Diseño y Desarrollo de software a medida</h3>
+            <p class="hidden-sm-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero consequuntur iste deserunt ipsum totam, rerum recusandae at quo. Eum, a.</p>
+          </article>
+          <article class="col-md-4">
+            <img src="images/Servicio 2.svg" alt="">
+            <h3>Redes de Computadoras</h3>
+            <p class="hidden-sm-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero consequuntur iste deserunt ipsum totam, rerum recusandae at quo. Eum, a.</p>
+          </article>
+          <article class="col-md-4">
+            <img src="images/Servicio 3.svg" alt="">
+            <h3>Instalación de Sistemas de Video Vigilancia</h3>
+            <p class="hidden-sm-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero consequuntur iste deserunt ipsum totam, rerum recusandae at quo. Eum, a.</p>
+          </article>
+        </div>
+        <!--<div class="btn-infor text-xs-center hidden-sm-down">
+          <a href="#" class="btn btn-secondary">Más Información</a>
+        </div>-->
+      </div>
     </main>
 
     <section class="tu-mejor-eleccion py-1">
       <div class="container">
-      <h2 class="h3 text-xs-center font-weight-bold">¿Por qué somos <span>tu mejor elección?</span></h2>
+      <h2 class=" text-xs-center font-weight-bold">¿Por qué somos <span>tu mejor elección?</span></h2>
       <p class="text-xs-center">Trabajamos de acuerdo a las necesidades y requerimientos de nuestros clientes.</p>
 
       <div class="row">

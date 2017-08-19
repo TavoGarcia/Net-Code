@@ -96,6 +96,9 @@ body {
       -ms-flex-align: center;
           align-items: center; }
 
+.texto-encabezado .margen {
+  margin-top: 4rem; }
+
 .ita {
   font-style: italic; }
 
@@ -109,7 +112,7 @@ body {
   color: #fff;
   background-color: #bb3a3a;
   border-color: transparent;
-  margin-top: 1rem;
+  margin-top: 4rem;
   -webkit-transition: all 0.5s ease;
           transition: all 0.5s ease; }
 
@@ -164,9 +167,6 @@ body {
 .valores ul li {
   list-style: none; }
 
-.valores ul li {
-  min-height: 9rem; }
-
 .conocenos .container .fa,
 .valores ul li .fa {
   list-style: none;
@@ -179,8 +179,8 @@ body {
   line-height: 4.7rem;
   color: #1e88e5; }
 
-.conocenos .container div {
-  margin: 1rem 0; }
+.container .valores ul {
+  margin: 1.5rem 0; }
 
 /*SECCI├ôN TU MEJOR ELECCI├ôN*/
 .tu-mejor-eleccion h2 span {
@@ -191,7 +191,7 @@ body {
   list-style: none; }
 
 .tu-mejor-eleccion ul li {
-  min-height: 9rem; }
+  min-height: 9.5rem; }
 
 .tu-mejor-eleccion ul li .fa {
   list-style: none;
@@ -209,6 +209,39 @@ body {
   font-size: 1.2rem;
   font-weight: bold;
   margin-top: 0.8rem; }
+
+/*SECCI├ôN SERVICIOS*/
+.servicios {
+  background: url("../images/fondo-servicios.jpg") no-repeat center center;
+  background-size: cover;
+  color: #fff; }
+
+.servicios img {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 70px;
+      -ms-flex: 0 0 70px;
+          flex: 0 0 70px;
+  overflow: hidden;
+  margin-right: 1rem; }
+
+.servicios h3 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 0;
+      -ms-flex: 1 1 0;
+          flex: 1 1 0;
+  margin: 0;
+  font-size: 1.2rem; }
+
+.servicios article {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0; }
 
 /*SECCI├ôN FOOTER*/
 .pie-pag {
@@ -252,13 +285,131 @@ body {
   text-decoration: none;
   z-index: 99999;
   line-height: 0;
-  -webkit-transition: all .5s ease;
-          transition: all .5s ease; }
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease; }
 
-.ir-arriba:hover,
-.ir-arriba:focus {
+.ir-arriba:focus,
+.ir-arriba:hover {
   outline: 0;
   text-decoration: none;
   color: #1e88e5; }
+
+/*MEDIAS QUERIES*/
+@media (min-width: 768px) {
+  #menu-principal {
+    height: auto !important;
+    display: block;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    margin-left: auto;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1; }
+
+  #menu-principal ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0; }
+
+  #menu-principal ul li a {
+    padding: .8rem;
+    text-transform: capitalize;
+    margin: 0 .3rem;
+    border-top: 0px;
+    border-bottom: 4px solid transparent;
+    -webkit-transition: all .5s ease;
+            transition: all .5s ease; }
+
+  #menu-principal ul li.active a,
+  #menu-principal ul li a:hover {
+    color: #1e88e5;
+    border-bottom: 4px solid; }
+
+  /*SECCI├ôN SERVICIOS*/
+  .servicios article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem 0; }
+
+  .servicios img {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 120px;
+        -ms-flex: 0 0 120px;
+            flex: 0 0 120px;
+    overflow: hidden;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    -webkit-transition: all 1s ease;
+            transition: all 1s ease; }
+
+  .servicios article:hover img {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d; }
+
+  .servicios h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem; } }
+@media (min-width: 992px) {
+  html {
+    font-size: 16px; }
+
+  .tu-mejor-eleccion ul li {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 7rem; }
+
+  .tu-mejor-eleccion ul li .fa {
+    text-align: center;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    margin-right: 1rem;
+    -webkit-transition: all 1s ease;
+            transition: all 1s ease; }
+
+  .tu-mejor-eleccion ul li:hover .fa {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d; }
+
+  .contenedor-eleccion {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 0px;
+        -ms-flex: 1 0 0px;
+            flex: 1 0 0px; }
+
+  .tu-mejor-eleccion ul li .contenedor-eleccion h4 {
+    margin-top: 0;
+    font-size: 1rem; }
+
+  .tu-mejor-eleccion ul:first-child .fa {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-left: 1rem;
+    margin-right: 0; }
+
+  .tu-mejor-eleccion ul li p {
+    font-size: .85rem; } }
 
 /*# sourceMappingURL=estilos.css.map */

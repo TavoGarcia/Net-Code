@@ -41,7 +41,6 @@ body {
   height: auto;
 }
 /*ESTILOS PARA EL BOTON MENÚ*/
-
 .btn-menu {
   border: 0;
   font-size: 2rem;
@@ -52,7 +51,6 @@ body {
   margin-left: auto;
 }
 /*Evita que el foco del navegador se muestre es un margen al rededor del elemento*/
-
 .btn-menu:focus {
   outline: 0;
 }
@@ -89,7 +87,7 @@ body {
 }
 
 .texto-encabezado .margen {
-  //margin-top: 4rem;
+  margin-top: 4rem;
 }
 
 .ita {
@@ -108,7 +106,7 @@ body {
   color: #fff;
   background-color: $secundario;
   border-color: transparent;
-  margin-top: 1rem;
+  margin-top: 4rem; //Valor original 1rem
   transition: all 0.5s ease;
 }
 
@@ -140,7 +138,6 @@ body {
   }
 }
 /*SECCIÓN CONÓCENOS*/
-
 .valores .col-xs-6 ul {
   padding: 0;
   list-style: none;
@@ -159,10 +156,6 @@ body {
   list-style: none;
 }
 
-.valores ul li {
-  min-height: 9rem;
-}
-
 .conocenos .container .fa,
 .valores ul li .fa {
   list-style: none;
@@ -177,11 +170,12 @@ body {
   color: $principal;
 }
 
-.conocenos .container div {
-  margin: 1rem 0;
+.conocenos .container .fa {}
+
+.container .valores ul {
+  margin: 1.5rem 0;
 }
 /*SECCIÓN TU MEJOR ELECCIÓN*/
-
 .tu-mejor-eleccion h2 span {
   color: $secundario;
 }
@@ -192,7 +186,8 @@ body {
 }
 
 .tu-mejor-eleccion ul li {
-  min-height: 9rem;
+  min-height: 9.5rem;
+  //background: red;
 }
 
 .tu-mejor-eleccion ul li .fa {
@@ -214,8 +209,32 @@ body {
   font-weight: bold;
   margin-top: 0.8rem;
 }
-/*SECCIÓN FOOTER*/
+/*SECCIÓN SERVICIOS*/
 
+.servicios {
+  background: url("../images/fondo-servicios.jpg") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+}
+
+.servicios img {
+  flex: 0 0 70px;
+  overflow: hidden;
+  margin-right: 1rem;
+}
+
+.servicios h3 {
+  flex: 1 1 0;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.servicios article {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+/*SECCIÓN FOOTER*/
 .pie-pag {
   background: #212121;
   color: #fff;
@@ -248,20 +267,110 @@ body {
   color: #c4302b;
 }
 
-.ir-arriba{
+.ir-arriba {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
   font-size: 3rem;
   color: $secundario;
-  text-decoration: none;;
+  text-decoration: none;
   z-index: 99999;
   line-height: 0;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
-.ir-arriba:hover,
-.ir-arriba:focus{
+
+.ir-arriba:focus,
+.ir-arriba:hover {
   outline: 0;
   text-decoration: none;
   color: $principal;
+}
+
+
+/*MEDIAS QUERIES*/
+@media (min-width:768px) {
+  #menu-principal{
+    height: auto !important;
+    display: block;
+    flex: 0 1 auto;
+    margin-left: auto;
+    order: 1;
+  }
+  #menu-principal ul{
+    display: flex;
+    margin: 0;
+  }
+  #menu-principal ul li a{
+    padding: .8rem;
+    text-transform: capitalize;
+    margin: 0 .3rem;
+    border-top: 0px;
+    border-bottom: 4px solid transparent;
+    transition: all .5s ease;
+  }
+  #menu-principal ul li.active a,
+  #menu-principal ul li a:hover{
+    color: $principal;
+    border-bottom: 4px solid;
+  }
+
+  /*SECCIÓN SERVICIOS*/
+  .servicios article {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 1rem 0;
+  }
+  .servicios img {
+    flex: 0 0 120px;
+    overflow: hidden;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    transition: all 1s ease;
+  }
+  .servicios article:hover img{
+    transform: rotateY(360deg);
+    transform-style: preserve-3d;
+  }
+  .servicios h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width:992px) {
+  html{
+    font-size: 16px;
+  }
+  .tu-mejor-eleccion ul li {
+    display: flex;
+    min-height: 7rem;
+  }
+  .tu-mejor-eleccion ul li .fa {
+    text-align: center;
+    flex: 0 1 auto;
+    margin-right: 1rem;
+    transition: all 1s ease;
+  }
+  .tu-mejor-eleccion ul li:hover .fa {
+    transform: rotateY(360deg);
+    transform-style: preserve-3d;
+  }
+  .contenedor-eleccion{
+    flex: 1 0 0px;
+  }
+  .tu-mejor-eleccion ul li .contenedor-eleccion h4{
+    margin-top: 0;
+    font-size: 1rem;
+  }
+  .tu-mejor-eleccion ul:first-child .fa{
+    order:1;
+    margin-left: 1rem;
+    margin-right: 0;
+  }
+  .tu-mejor-eleccion ul li p{
+    font-size: .85rem;
+  }
+
+
 }

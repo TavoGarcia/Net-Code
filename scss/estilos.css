@@ -23,7 +23,7 @@ body {
           flex-direction: column; }
 
 .encabezado {
-  background: rgba(0, 0, 0, 0.97);
+  background: #000;
   color: #fff;
   padding: 0.5rem 0; }
 
@@ -110,7 +110,7 @@ body {
 
 .btn-primary {
   color: #fff;
-  background-color: rgba(241, 0, 11, 0.93);
+  background-color: #d50000;
   border-color: transparent;
   margin-top: 4rem;
   -webkit-transition: all 0.5s ease;
@@ -119,10 +119,9 @@ body {
 .btn-primary:active:hover,
 .btn-primary:focus,
 .btn-primary:hover {
-  color: #aa0200;
-  background-color: #fff;
-  border-color: transparent;
-  font-weight: bold; }
+  color: #fff;
+  background-color: #1e88e5;
+  border-color: transparent; }
 
 .flecha-scroll a {
   display: inline-block;
@@ -185,7 +184,7 @@ body {
 
 /*SECCI├ôN TU MEJOR ELECCI├ôN*/
 .tu-mejor-eleccion h2 span {
-  color: rgba(241, 0, 11, 0.93); }
+  color: #d50000; }
 
 .tu-mejor-eleccion ul,
 .tu-mejor-eleccion ul li {
@@ -282,7 +281,7 @@ body {
   bottom: 1rem;
   right: 1rem;
   font-size: 3rem;
-  color: rgba(241, 0, 11, 0.93);
+  color: #d50000;
   text-decoration: none;
   z-index: 99999;
   line-height: 0;

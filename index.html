@@ -18,8 +18,12 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/estilos.css">
 
+    <script src="script.js"></script>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+
   </head>
   <body>
+
     <section class="bienvenidos">
       <header class="encabezado navbar-fixed-top" role="banner">
         <div class="container">
@@ -34,7 +38,7 @@
 
           <nav id="menu-principal" class="collapse">
             <ul>
-              <li class="active"><a href="index.html">Inicio</a></li>
+              <li class=""><a href="index.html">Inicio</a></li>
               <li><a href="#conocenos">Conócenos</a></li>
               <li><a href="#servicios">Servicios</a></li>
               <li><a href="#contactanos">Contáctanos</a></li>
@@ -53,7 +57,7 @@
           </div>
 
           <p class="p-trabajo">Trabajamos de acuerdo a las necesidades y requerimientos de nuestros clientes.</p>
-          <a href="contactanos.html" class="btn btn-primary btn-lg">Contáctanos</a>
+          <a href="#contactanos" class="btn btn-primary btn-lg">Contáctanos</a>
         </div>
       </div>
 
@@ -122,18 +126,18 @@
         <div class="row">
           <article class="col-md-4">
             <img src="images/Servicio 1.svg" alt="">
-            <h3>Diseño y Desarrollo de software a medida</h3>
-            <p class="hidden-sm-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero consequuntur iste deserunt ipsum totam, rerum recusandae at quo. Eum, a.</p>
+            <h3>Diseño y Desarrollo de Software a Medida</h3>
+            <p class="hidden-sm-down">Desarrollamos soluciones de software en un amplio rango de tecnologías basados en las necesidades únicas de cada cliente y en la demanda del dominio del problema.</p>
           </article>
           <article class="col-md-4">
             <img src="images/Servicio 2.svg" alt="">
             <h3>Redes de Computadoras</h3>
-            <p class="hidden-sm-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero consequuntur iste deserunt ipsum totam, rerum recusandae at quo. Eum, a.</p>
+            <p class="hidden-sm-down">Ofrecemos una gama completa de soluciones para optimización y administracion de redes con servicios de soporte operativo, así como diseño e instalación de cableado estructurado.</p>
           </article>
           <article class="col-md-4">
             <img src="images/Servicio 3.svg" alt="">
-            <h3>Instalación de Sistemas de Video Vigilancia</h3>
-            <p class="hidden-sm-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero consequuntur iste deserunt ipsum totam, rerum recusandae at quo. Eum, a.</p>
+            <h3>Sistemas de Videovigilancia</h3>
+            <p class="hidden-sm-down">Contamos con personal capacitado para instalaciones y configuraciones de sistemas CCTV. Con profesionalismo le orientamos sobre el equipo adecuado para Usted.</p>
           </article>
         </div>
         <!--<div class="btn-infor text-xs-center hidden-sm-down">
@@ -153,21 +157,21 @@
             <i class="fa fa-file-code-o" aria-hidden="true"></i>
             <div class="contenedor-eleccion">
             <h4>Páginas Web</h4>
-            <p class="hidden-md-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, unde?</p>
+            <p class="hidden-md-down">Sitios dinámicos, estáticos; adaptables a dispositivos móviles y posicionamiento SEO.</p>
             </div>
         </li>
         <li>
             <i class="fa fa-server" aria-hidden="true"></i>
             <div class="contenedor-eleccion">
           <h4>Administración de Servidores</h4>
-          <p class="hidden-md-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, quos.</p>
+          <p class="hidden-md-down">Mejoramos la seguridad de su servidor para reducir en la mayor medida posible los riesgos para su negocio.</p>
           </div>
         </li>
         <li>
             <i class="fa fa-database" aria-hidden="true"></i>
             <div class="contenedor-eleccion">
           <h4>Arrendamiento de Hosting</h4>
-          <p class="hidden-md-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, dicta.</p>
+          <p class="hidden-md-down">Haz que tu sitio web sea visible para que otras personas puedan verlo en internet.</p>
           </div>
         </li>
       </ul>
@@ -181,21 +185,21 @@
             <i class="fa fa-tv" aria-hidden="true"></i>
             <div class="contenedor-eleccion">
           <h4>Aplicaciones de Escritorio</h4>
-          <p class="hidden-md-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, reiciendis.</p>
+          <p class="hidden-md-down">Desarrollamos soluciones de software para necesidades especificas de tu empresa u organismo.</p>
           </div>
         </li>
         <li>
             <i class="fa fa-sitemap" aria-hidden="true"></i>
             <div class="contenedor-eleccion">
           <h4>Diseño de redes informaticas</h4>
-          <p class="hidden-md-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, quaerat!</p>
+          <p class="hidden-md-down">Un buen diseño de red es el cimiento sobre el cual se basan el rendimiento y la confiabilidad.</p>
           </div>
         </li>
         <li>
             <i class="fa fa-video-camera" aria-hidden="true"></i>
             <div class="contenedor-eleccion">
           <h4>Sistemas de Video Vigilancia</h4>
-          <p class="hidden-md-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, necessitatibus?</p>
+          <p class="hidden-md-down">Brindamos soluciones enfocadas a tu tranquilidad y seguridad, permitiéndote vigilar tu patrimonio y entorno desde la comodidad de tu teléfono móvil.</p>
           </div>
         </li>
       </ul>
@@ -235,38 +239,37 @@
     		<div class="clear"> </div>
     	</div>
     	<div class="agile-form">
-    		<form action="#" method="post">
+    		<form id="fo3" action="enviar.php" method="post" onsubmit="return enviar_datos_ajax()">
     		  <div class="agile_w3l_inner_form">
     				<div class="ft-name">
-    					<input type="text" name="First Name" placeholder="Nombre Completo/Empresa" required="required">
+    					<input type="text" id="nombre"  placeholder="Nombre Completo/Empresa" required>
     				</div>
     				<div class="e-name">
-    				<input type="email" name="Email" placeholder="Correo Electrónico" required="required">
+    				    <input type="email" id="email"  placeholder="Correo Electrónico" required>
     				</div>
-    				<textarea name="Message" placeholder="Mensaje" required=""></textarea>
+    				    <textarea id="mensaje"  placeholder="Mensaje" required></textarea>
     			 </div>
     			 <div class="w3ls-bottom">
-
-    			<input type="submit" value="Enviar ">
-
-    	         </div>
-
+    			      <input type="button" value="Enviar" id="ejecuta" onclick="enviar_datos_ajax();">
+    	     </div>
     		</form>
     	</div>
-
     </section>
+
   </div>
 
-
-
+    <div class="container">
+        <div id="resultado" class="text-xs-center font-weight-bold"></div>
+    </div>
+    <br>
 
     <footer class="pie-pag py-1" role="contentinfo">
       <div class="container">
         <p>2017 © Net-Code. Todos los derechos reservados.</p>
         <ul class="redes-sociales">
-          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+          <!--<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> -->
+          <li><a href="https://www.facebook.com/NetCodeMX"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <!--<li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li> -->
         </ul>
       </div>
     </footer>
@@ -274,7 +277,7 @@
     <a href="#" class="ir-arriba"><i class="fa  fa-arrow-circle-up" aria-hidden="true"></i></a>
 
   <!--Carga de archivos JS-->
-  <script src="js/jquery.min.js" type="text/javascript"></script>
+
   <script src="js/bootstrap.min.js" type="text/javascript"></script>
 
   </body>

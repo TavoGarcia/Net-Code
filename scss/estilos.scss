@@ -3,8 +3,8 @@
 //----------------------
 $texto: #363636;
 $principal: #1e88e5;
-$secundario: #bb3a3a;
-$menu: #000;
+$secundario: rgba(#f1000b, 0.93);
+$menu: rgba(#000000, 0.97);
 
 html {
   font-size: 15px;
@@ -113,9 +113,10 @@ body {
 .btn-primary:active:hover,
 .btn-primary:focus,
 .btn-primary:hover {
-  color: #fff;
-  background-color: $principal;
+  color: #aa0200;
+  background-color:#fff ;
   border-color: transparent;
+  font-weight: bold;
 }
 
 .flecha-scroll a {

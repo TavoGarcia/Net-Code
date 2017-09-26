@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="msvalidate.01" content="742FC118F5666913721902D0CA2654D1" />
     <title>NET-CODE | Desarrollando soluciones, Conectando tu empresa</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,6 +21,17 @@
 
     <script src="script.js"></script>
     <script src="js/jquery.min.js" type="text/javascript"></script>
+
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106528139-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+
+  gtag('config', 'UA-106528139-1');
+</script>
+
 
   </head>
   <body>
@@ -121,7 +133,7 @@
 
     <main class="servicios py-1" id="servicios">
       <div class="container">
-        <h2 class="text-xs-center font-weight-bold">Nuestros Servicios</h2>
+        <h1 class="text-xs-center font-weight-bold">Nuestros Servicios</h1>
 
         <div class="row">
           <article class="col-md-4">
@@ -219,7 +231,7 @@
 
   <div class="fondo" id="contactanos">
   <div class="agileheader py-1">
-    	<h1 class="font-weight-bold">Contáctanos</h1>
+    	<h2 class="font-weight-bold">Contáctanos</h2>
   </div>
     <!--//header-->
     <!--main-->
@@ -252,25 +264,47 @@
     			 <div class="w3ls-bottom">
     			      <input type="button" value="Enviar" id="ejecuta" onclick="enviar_datos_ajax();">
     	     </div>
-    		</form>
-    	</div>
-    </section>
+         </form>
 
-  </div>
+            <div id="flotante1" style="display:none;" class="text-xs-center font-weight-bold alert alert-danger">Todos los campos son obligatorios!</div>
+            <div id="flotante2" style="display:none;" class="text-xs-center font-weight-bold alert alert-danger">Correo inválido, por favor verifíquelo!</div>
+            <div id="flotante3" style="display:none;" class="text-xs-center font-weight-bold alert alert-danger">Nombre inválido, por favor evite utilizar números en este campo!</div>
+            <div id="flotante4" style="display:none;" class="text-xs-center font-weight-bold alert alert-danger">Mensaje inválido, utilice únicamente carácteres alfanuméricos!</div>
+            <div id="resultado" class="text-xs-center font-weight-bold"></div>
 
-    <div class="container">
-        <div id="resultado" class="text-xs-center font-weight-bold"></div>
-    </div>
-    <br>
+     	</div>
+     </section>
+         <br>
+   </div>
 
     <footer class="pie-pag py-1" role="contentinfo">
       <div class="container">
-        <p>2017 © Net-Code. Todos los derechos reservados.</p>
-        <ul class="redes-sociales">
-          <!--<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> -->
-          <li><a href="https://www.facebook.com/NetCodeMX"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-          <!--<li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li> -->
-        </ul>
+        <div class="row">
+          <div class="contacto col-xs-12 col-md-4 text-xs-left">
+            <h5 class="pt-1">Contáctanos</h5>
+            <p><i class="fa fa-map-marker"></i> Martinez de la Torre, Veracruz.</p>
+            <p><i class="fa fa-envelope"></i>consultoria@net-code.com.mx</p>
+            <p><i class="fa fa-phone"></i>+52 1 232 143 3567</p>
+            <p><i class="fa fa-phone"></i>+52 1 232 127 1898</p>
+          </div>
+
+          <div class="social col-xs-12 col-md-4 text-xs-left text-md-center">
+            <h5 class="pt-1">Redes Sociales</h5>
+            <ul class="redes-sociales">
+              <!--<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> -->
+              <li><a href="https://www.linkedin.com/company/net-codemx" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.facebook.com/NetCodeMX" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+              <!--<li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li> -->
+            </ul>
+          </div>
+
+          <div class="politica col-xs-12 col-md-4 text-xs-left text-md-right">
+            <h5 class="pt-1">Politicas</h5>
+            <p><a href="Politicas-de-Privacidad-Net-Code.pdf" target="_blank">Politica de Privacidad</a></p>
+            <p><a href="http://www.net-code.com.mx">Net-Code</a> © 2017</p>
+          </div>
+
+        </div>
       </div>
     </footer>
 

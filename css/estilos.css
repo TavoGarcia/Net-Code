@@ -217,6 +217,9 @@ body {
   background-size: cover;
   color: #fff; }
 
+.servicios h1 {
+  font-size: 2rem; }
+
 .servicios img {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 70px;
@@ -250,28 +253,42 @@ body {
   color: #fff;
   text-align: center; }
 
+.pie-pag .row h5 {
+  font-size: 1.2rem;
+  margin: 0 0 1rem 0; }
+
+.pie-pag .row p {
+  font-size: .85rem;
+  margin: 0.1rem; }
+
+.pie-pag .row p a {
+  color: #fff;
+  text-decoration: none; }
+
+.pie-pag .contacto p i {
+  margin: 0 .8rem 0 0; }
+
 .pie-pag .redes-sociales {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   list-style: none;
   margin: 0;
   padding: 0; }
 
 .pie-pag .redes-sociales a {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 0 0.8rem; }
 
 .pie-pag .redes-sociales .fa-twitter:hover {
   color: #1dcaff; }
 
-.pie-pag .redes-sociales .fa-facebook:hover {
+.pie-pag .redes-sociales .fa-linkedin-square:hover {
+  color: #0077b5; }
+
+.pie-pag .redes-sociales .fa-facebook-square:hover {
   color: #3b5998; }
 
 .pie-pag .redes-sociales .fa-youtube:hover {
@@ -364,7 +381,14 @@ body {
 
   .servicios h3 {
     font-size: 1.5rem;
-    margin-bottom: 1rem; } }
+    margin-bottom: 1rem; }
+
+  /*FOOTER*/
+  .pie-pag .redes-sociales {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
 @media (min-width: 992px) {
   html {
     font-size: 16px; }
@@ -411,6 +435,9 @@ body {
     margin-right: 0; }
 
   .tu-mejor-eleccion ul li p {
-    font-size: .85rem; } }
+    font-size: .85rem; }
+
+  .pie-pag .row p {
+    font-size: .9rem; } }
 
 /*# sourceMappingURL=estilos.css.map */

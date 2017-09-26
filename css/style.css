@@ -36,7 +36,7 @@ body p,h1,h2,h3,h4,h5,h6,a{
 .agileheader {
     margin: 60px 0 40px 0;
 }
-.agileheader h1 {
+.agileheader h2 {
 
     letter-spacing: 5px;
     color: #ffffff;
@@ -184,7 +184,7 @@ p.ph-icon, p.ma-icon {
     font-size: 16px;
     color: #212121;
 }
-.w3ls-bottom input[type="submit"] {
+.w3ls-bottom input[type="button"] {
     outline: none;
     color: #fff;
     padding: 16px 14px;
@@ -201,8 +201,8 @@ p.ph-icon, p.ma-icon {
 	    font-weight: 600;
 
 }
-.w3ls-bottom input[type="submit"]:hover {
-	   background:#bb3a3a;
+.w3ls-bottom input[type="button"]:hover {
+	   background:#f1000b;
 }
 /*--//main--*/
 
